@@ -8,6 +8,10 @@ https://stackoverflow.com/questions/73964338/how-to-disable-automatic-brace-surr
 https://i.sstatic.net/HEXAF.png
 
 TODO:
+1. Собрать LIB-файл из шаблонных функций и проверить собранную библиотеку на новом проекте в новом Solution;
+2. То же самое сделать с DLL-библиотекой;
+
+DONE:
 1. В проекте 'Functions\Arrays' написать следующие функции:
 	??? Sum(???);			//Возвращает сумму элементов массива;					DONE
 	??? Avg(???);			//Возвращает среднее-арифметическое элементов массива;	DONE

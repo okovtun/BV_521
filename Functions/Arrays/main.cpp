@@ -1,20 +1,9 @@
-﻿#include<iostream>
-using namespace std;
-
-#define tab "\t"
-
-const int ROWS = 5;
-const int COLS = 8;
-
-void FillRand(int arr[], const int n, int minRand = 0, int maxRand = 100);
-void FillRand(double arr[], const int n, int minRand = 0, int maxRand = 100);
-void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS, int minRand = 0, int maxRand = 100);
-
-//template - создание шаблона
-//typename - создает шаблонный тип данных
-//T - это имя шаблонного типа (T - type)
-template<typename T>void Print(T arr[], const int n);
-template<typename T>void Print(T arr[ROWS][COLS], const int ROWS, const int COLS);
+﻿#include"stdafx.h"
+#include"constants.h"
+#include"FillRand.h"
+//#include"FillRand.cpp"//Реализации НЕшаблонных функций НИКОГДА НЕ ПОДКЛЮЧАЮТСЯ НА МЕСТО ВЫЗОВА
+#include"Print.h"
+#include"Print.cpp"		//Реализации шаблонных функций В ОБЯЗАТЕЛЬНОМ ПОРЯДКЕ ПОДКЛЮЧАЮТСЯ НА МЕСТО ВЫЗОВА
 
 template<typename T>void Sort(T arr[], const int n);
 template<typename T>void Sort(T arr[ROWS][COLS], const int ROWS, const int COLS);
@@ -81,54 +70,7 @@ void main()
 
 }
 
-void FillRand(int arr[], const int n, int minRand, int maxRand)
-{
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % (maxRand - minRand) + minRand;
-	}
-}
-void FillRand(double arr[], const int n, int minRand, int maxRand)
-{
-	minRand *= 100;
-	maxRand *= 100;
-	for (int i = 0; i < n; i++)
-	{
-		arr[i] = rand() % (maxRand - minRand) + minRand;
-		arr[i] /= 100;
-	}
-}
-void FillRand(int arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			arr[i][j] = rand() % (maxRand - minRand) + minRand;
-		}
-	}
-}
 
-template<typename T>void Print(T arr[], const int n)
-{
-	for (int i = 0; i < n; i++)
-	{
-		cout << arr[i] << tab;
-	}
-	cout << endl;
-}
-template<typename T>void Print(T arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-	{
-		for (int j = 0; j < COLS; j++)
-		{
-			cout << arr[i][j] << tab;
-		}
-		cout << endl;
-	}
-	cout << endl;
-}
 template<typename T>void Sort(T arr[], const int n)
 {
 	for (int i = 0; i < n; i++)
