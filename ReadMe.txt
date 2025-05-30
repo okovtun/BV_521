@@ -4,6 +4,9 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIP4IcNHD37jcaLVmXEbFd1k
 IEEE-754:
 http://www.softelectro.ru/ieee754.html
 
+https://stackoverflow.com/questions/73964338/how-to-disable-automatic-brace-surrounding-on-selection-in-visual-studio
+https://i.sstatic.net/HEXAF.png
+
 TODO:
 1. В проекте 'Functions\Arrays' написать следующие функции:
 	??? Sum(???);			//Возвращает сумму элементов массива;					DONE
