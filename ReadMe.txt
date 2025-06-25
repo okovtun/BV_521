@@ -4,6 +4,9 @@ https://www.youtube.com/playlist?list=PLeqyOOqxeiIP4IcNHD37jcaLVmXEbFd1k
 IEEE-754:
 http://www.softelectro.ru/ieee754.html
 
+string.h
+https://legacy.cplusplus.com/reference/cstring/
+
 TODO:
 Реализовать следующие функции:
 	??? StringLength(???);	//возвращает длину строки				DONE
